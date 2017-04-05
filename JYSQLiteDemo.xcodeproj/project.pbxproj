@@ -14,6 +14,8 @@
 		A0BDDAFF1E94E28900B9A186 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0BDDAFD1E94E28900B9A186 /* Main.storyboard */; };
 		A0BDDB011E94E28900B9A186 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0BDDB001E94E28900B9A186 /* Assets.xcassets */; };
 		A0BDDB041E94E28900B9A186 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0BDDB021E94E28900B9A186 /* LaunchScreen.storyboard */; };
+		A0BDDB151E94E43900B9A186 /* FMDBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0BDDB131E94E43900B9A186 /* FMDBViewController.m */; };
+		A0BDDB161E94E43900B9A186 /* FMDBViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A0BDDB141E94E43900B9A186 /* FMDBViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,9 @@
 		A0BDDB001E94E28900B9A186 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A0BDDB031E94E28900B9A186 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A0BDDB051E94E28900B9A186 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A0BDDB121E94E43900B9A186 /* FMDBViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDBViewController.h; sourceTree = "<group>"; };
+		A0BDDB131E94E43900B9A186 /* FMDBViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDBViewController.m; sourceTree = "<group>"; };
+		A0BDDB141E94E43900B9A186 /* FMDBViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FMDBViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +70,7 @@
 		A0BDDAF31E94E28900B9A186 /* JYSQLiteDemo */ = {
 			isa = PBXGroup;
 			children = (
+				A0BDDB111E94E43900B9A186 /* Demo */,
 				A0BDDAF71E94E28900B9A186 /* AppDelegate.h */,
 				A0BDDAF81E94E28900B9A186 /* AppDelegate.m */,
 				A0BDDAFA1E94E28900B9A186 /* ViewController.h */,
@@ -84,6 +90,16 @@
 				A0BDDAF51E94E28900B9A186 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A0BDDB111E94E43900B9A186 /* Demo */ = {
+			isa = PBXGroup;
+			children = (
+				A0BDDB121E94E43900B9A186 /* FMDBViewController.h */,
+				A0BDDB131E94E43900B9A186 /* FMDBViewController.m */,
+				A0BDDB141E94E43900B9A186 /* FMDBViewController.xib */,
+			);
+			path = Demo;
 			sourceTree = "<group>";
 		};
 		A9ED51FBC2AD469DAB2D89BA /* Frameworks */ = {
@@ -166,6 +182,7 @@
 				A0BDDB041E94E28900B9A186 /* LaunchScreen.storyboard in Resources */,
 				A0BDDB011E94E28900B9A186 /* Assets.xcassets in Resources */,
 				A0BDDAFF1E94E28900B9A186 /* Main.storyboard in Resources */,
+				A0BDDB161E94E43900B9A186 /* FMDBViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -184,7 +201,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run \'pod install\' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		C99C006CEEEE24089711CDC8 /* [CP] Copy Pods Resources */ = {
@@ -227,6 +244,7 @@
 				A0BDDAFC1E94E28900B9A186 /* ViewController.m in Sources */,
 				A0BDDAF91E94E28900B9A186 /* AppDelegate.m in Sources */,
 				A0BDDAF61E94E28900B9A186 /* main.m in Sources */,
+				A0BDDB151E94E43900B9A186 /* FMDBViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -379,6 +397,7 @@
 				A0BDDB0A1E94E28900B9A186 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
