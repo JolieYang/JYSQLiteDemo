@@ -16,6 +16,9 @@
 		A0BDDB041E94E28900B9A186 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0BDDB021E94E28900B9A186 /* LaunchScreen.storyboard */; };
 		A0BDDB151E94E43900B9A186 /* FMDBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0BDDB131E94E43900B9A186 /* FMDBViewController.m */; };
 		A0BDDB161E94E43900B9A186 /* FMDBViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A0BDDB141E94E43900B9A186 /* FMDBViewController.xib */; };
+		A0C6C9991E97365700528583 /* GYDataCenterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0C6C9971E97365700528583 /* GYDataCenterViewController.m */; };
+		A0C6C99A1E97365700528583 /* GYDataCenterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A0C6C9981E97365700528583 /* GYDataCenterViewController.xib */; };
+		A0C6C99D1E97368000528583 /* CustomModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A0C6C99C1E97368000528583 /* CustomModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +38,11 @@
 		A0BDDB121E94E43900B9A186 /* FMDBViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDBViewController.h; sourceTree = "<group>"; };
 		A0BDDB131E94E43900B9A186 /* FMDBViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDBViewController.m; sourceTree = "<group>"; };
 		A0BDDB141E94E43900B9A186 /* FMDBViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FMDBViewController.xib; sourceTree = "<group>"; };
+		A0C6C9961E97365700528583 /* GYDataCenterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GYDataCenterViewController.h; sourceTree = "<group>"; };
+		A0C6C9971E97365700528583 /* GYDataCenterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GYDataCenterViewController.m; sourceTree = "<group>"; };
+		A0C6C9981E97365700528583 /* GYDataCenterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GYDataCenterViewController.xib; sourceTree = "<group>"; };
+		A0C6C99B1E97368000528583 /* CustomModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomModel.h; sourceTree = "<group>"; };
+		A0C6C99C1E97368000528583 /* CustomModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,11 +103,24 @@
 		A0BDDB111E94E43900B9A186 /* Demo */ = {
 			isa = PBXGroup;
 			children = (
+				A0C6C9951E97365700528583 /* GYDataCenter */,
 				A0BDDB121E94E43900B9A186 /* FMDBViewController.h */,
 				A0BDDB131E94E43900B9A186 /* FMDBViewController.m */,
 				A0BDDB141E94E43900B9A186 /* FMDBViewController.xib */,
 			);
 			path = Demo;
+			sourceTree = "<group>";
+		};
+		A0C6C9951E97365700528583 /* GYDataCenter */ = {
+			isa = PBXGroup;
+			children = (
+				A0C6C9961E97365700528583 /* GYDataCenterViewController.h */,
+				A0C6C9971E97365700528583 /* GYDataCenterViewController.m */,
+				A0C6C9981E97365700528583 /* GYDataCenterViewController.xib */,
+				A0C6C99B1E97368000528583 /* CustomModel.h */,
+				A0C6C99C1E97368000528583 /* CustomModel.m */,
+			);
+			path = GYDataCenter;
 			sourceTree = "<group>";
 		};
 		A9ED51FBC2AD469DAB2D89BA /* Frameworks */ = {
@@ -179,6 +200,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A0C6C99A1E97365700528583 /* GYDataCenterViewController.xib in Resources */,
 				A0BDDB041E94E28900B9A186 /* LaunchScreen.storyboard in Resources */,
 				A0BDDB011E94E28900B9A186 /* Assets.xcassets in Resources */,
 				A0BDDAFF1E94E28900B9A186 /* Main.storyboard in Resources */,
@@ -243,8 +265,10 @@
 			files = (
 				A0BDDAFC1E94E28900B9A186 /* ViewController.m in Sources */,
 				A0BDDAF91E94E28900B9A186 /* AppDelegate.m in Sources */,
+				A0C6C99D1E97368000528583 /* CustomModel.m in Sources */,
 				A0BDDAF61E94E28900B9A186 /* main.m in Sources */,
 				A0BDDB151E94E43900B9A186 /* FMDBViewController.m in Sources */,
+				A0C6C9991E97365700528583 /* GYDataCenterViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

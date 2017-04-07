@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "FMDBViewController.h"
+#import "GYDataCenterViewController.h"
 
 @interface ViewController ()
 
@@ -18,7 +19,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    [self jumpToFMDBAction:nil];
+    [self jumpToGYDataCenterAction:nil];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -27,6 +28,10 @@
 }
 - (IBAction)jumpToFMDBAction:(id)sender {
     FMDBViewController *vc = [[FMDBViewController alloc] initWithNibName:NSStringFromClass([FMDBViewController class]) bundle:nil];
+    [self.navigationController pushViewController:vc animated:YES];
+}
+- (IBAction)jumpToGYDataCenterAction:(id)sender {
+    GYDataCenterViewController *vc = [[GYDataCenterViewController alloc] initWithNibName:NSStringFromClass([GYDataCenterViewController class]) bundle:nil];
     [self.navigationController pushViewController:vc animated:YES];
 }
 

@@ -24,6 +24,13 @@
                                     <action selector="jumpToFMDBAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5ZS-Ge-ajf"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="27k-B1-8Wz">
+                                <rect key="frame" x="111" y="110" width="99" height="30"/>
+                                <state key="normal" title="GYDataCenter"/>
+                                <connections>
+                                    <action selector="jumpToGYDataCenterAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Hrv-kT-EsC"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
